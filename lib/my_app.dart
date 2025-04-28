@@ -1,6 +1,6 @@
-import 'package:book_listing_app/core/localizations_cubit/localizations_cubit.dart';
+import 'package:financial_services_app/core/localizations_cubit/localizations_cubit.dart';
 import 'package:bot_toast/bot_toast.dart';
-import 'package:book_listing_app/core/extensions/build_context.dart';
+import 'package:financial_services_app/core/extensions/build_context.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

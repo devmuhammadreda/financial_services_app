@@ -1,4 +1,4 @@
-import 'package:book_listing_app/features/home/domain/entities/book_entity.dart';
+import 'package:financial_services_app/features/home/domain/entities/book_entity.dart';
 
 import 'results_model.dart';
 

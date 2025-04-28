@@ -1,6 +1,6 @@
-import 'package:book_listing_app/core/extensions/build_context.dart';
-import 'package:book_listing_app/core/widgets/app_spacer.dart';
-import 'package:book_listing_app/gen/assets.gen.dart';
+import 'package:financial_services_app/core/extensions/build_context.dart';
+import 'package:financial_services_app/core/widgets/app_spacer.dart';
+import 'package:financial_services_app/gen/assets.gen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

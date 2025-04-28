@@ -1,5 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:book_listing_app/core/theme/text_styles.dart';
+import 'package:financial_services_app/core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class HeaderWidget extends StatelessWidget {

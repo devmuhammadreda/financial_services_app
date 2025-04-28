@@ -1,9 +1,9 @@
-import 'package:book_listing_app/core/extensions/build_context.dart';
-import 'package:book_listing_app/core/extensions/widget.dart';
-import 'package:book_listing_app/core/widgets/app_spacer.dart';
-import 'package:book_listing_app/core/widgets/custom_error_widget.dart';
-import 'package:book_listing_app/core/widgets/custom_text_field.dart';
-import 'package:book_listing_app/core/widgets/loading_widget.dart';
+import 'package:financial_services_app/core/extensions/build_context.dart';
+import 'package:financial_services_app/core/extensions/widget.dart';
+import 'package:financial_services_app/core/widgets/app_spacer.dart';
+import 'package:financial_services_app/core/widgets/custom_error_widget.dart';
+import 'package:financial_services_app/core/widgets/custom_text_field.dart';
+import 'package:financial_services_app/core/widgets/loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void _toggleExpansion(int index) {
     setState(() {
       if (_expandedIndex == index) {
-        _expandedIndex = null; 
+        _expandedIndex = null;
       } else {
         _expandedIndex = index;
       }

@@ -1,4 +1,4 @@
-import 'package:book_listing_app/core/extensions/build_context.dart';
+import 'package:financial_services_app/core/extensions/build_context.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../gen/assets.gen.dart';

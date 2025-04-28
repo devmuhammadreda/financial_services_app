@@ -1,4 +1,4 @@
-import 'package:book_listing_app/gen/assets.gen.dart';
+import 'package:financial_services_app/gen/assets.gen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../theme/text_styles.dart';

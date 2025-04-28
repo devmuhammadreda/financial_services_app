@@ -1,8 +1,8 @@
 import 'dart:developer';
 
-import 'package:book_listing_app/core/error/failures.dart';
-import 'package:book_listing_app/features/home/domain/entities/book_entity.dart';
-import 'package:book_listing_app/features/home/domain/parameters/get_all_books_params.dart';
+import 'package:financial_services_app/core/error/failures.dart';
+import 'package:financial_services_app/features/home/domain/entities/book_entity.dart';
+import 'package:financial_services_app/features/home/domain/parameters/get_all_books_params.dart';
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/services/network_info.dart';
