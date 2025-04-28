@@ -27,7 +27,7 @@ class AppProgressButton extends StatefulWidget {
     this.child,
     this.width,
     this.height,
-    this.radius = 65,
+    this.radius = 12,
     this.elevation = 0,
     this.fontSize,
     this.backgroundColor = ColorsManager.primary,
@@ -38,9 +38,9 @@ class AppProgressButton extends StatefulWidget {
     this.isOutlined = false,
     this.borderColor,
   }) : assert(
-         text != null || child != null,
-         'Either text or child must be provided',
-       );
+          text != null || child != null,
+          'Either text or child must be provided',
+        );
 
   @override
   State<AppProgressButton> createState() => _AppProgressButtonState();
@@ -110,35 +110,29 @@ class _AppProgressButtonState extends State<AppProgressButton>
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _controller,
-      builder:
-          (context, child) => Container(
-            constraints: BoxConstraints(minWidth: _buttonHeight),
-            width: _sizeAnimation.value,
-            height: _buttonHeight,
-            child: MaterialButton(
-              padding:
-                  widget.padding ??
-                  EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
-              elevation: widget.elevation,
-              shape: _buildButtonShape(),
-              color:
-                  widget.isOutlined
-                      ? Colors.transparent
-                      : widget.backgroundColor,
-              onPressed:
-                  _controller.isCompleted
-                      ? null
-                      : () => widget.onPressed(_controller),
-              child: _buildButtonContent(),
-            ),
-          ),
+      builder: (context, child) => Container(
+        constraints: BoxConstraints(minWidth: _buttonHeight),
+        width: _sizeAnimation.value,
+        height: _buttonHeight,
+        child: MaterialButton(
+          padding: widget.padding ??
+              EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
+          elevation: widget.elevation,
+          shape: _buildButtonShape(),
+          color:
+              widget.isOutlined ? Colors.transparent : widget.backgroundColor,
+          onPressed: _controller.isCompleted
+              ? null
+              : () => widget.onPressed(_controller),
+          child: _buildButtonContent(),
+        ),
+      ),
     );
   }
 
   RoundedRectangleBorder _buildButtonShape() {
     return RoundedRectangleBorder(
-      borderRadius:
-          _radiusAnimation.value ??
+      borderRadius: _radiusAnimation.value ??
           BorderRadius.circular(widget.radius?.r ?? 8.r),
       side: _getBorderSide(),
     );
@@ -184,15 +178,13 @@ class _AppProgressButtonState extends State<AppProgressButton>
 
   Widget _buildButtonText() {
     return FittedBox(
-      child:
-          widget.child ??
+      child: widget.child ??
           Text(
             widget.text ?? 'Click Me',
             style: TextStyles.semiBold14.copyWith(
-              color:
-                  widget.isOutlined
-                      ? widget.textColor ?? ColorsManager.black
-                      : widget.textColor ?? ColorsManager.white,
+              color: widget.isOutlined
+                  ? widget.textColor ?? ColorsManager.black
+                  : widget.textColor ?? ColorsManager.white,
               fontSize: widget.fontSize?.sp,
             ),
           ),

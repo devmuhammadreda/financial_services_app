@@ -84,12 +84,28 @@ class ApiBaseHelper {
     NetworkRequestBody? body,
     String? token,
     Map<String, dynamic>? queryParameters,
+    String? customBaseUrl, // 👈
+    Map<String, String>? customHeaders,
   }) async {
     try {
+      // Backup current Dio options
+      final originalBaseUrl = _dio.options.baseUrl;
+      final originalHeaders = Map<String, dynamic>.from(_dio.options.headers);
+
+      // Set custom baseUrl if provided
+      if (customBaseUrl != null) {
+        _dio.options.baseUrl = customBaseUrl;
+      }
+
+      // Set headers
+      _dio.options.headers = {
+        ..._defaultHeaders, // default
+        if (customHeaders != null) ...customHeaders, // override if custom
+      };
+
+      // Set Authorization if token exists
       if (token != null) {
         _dio.options.headers['Authorization'] = 'Bearer $token';
-      } else {
-        _dio.options.headers.remove('Authorization');
       }
 
       Response response;
@@ -99,12 +115,24 @@ class ApiBaseHelper {
           response = await _dio.get(url, queryParameters: queryParameters);
           break;
         case HttpMethod.post:
+          dynamic data;
+          if (body is FormDataNetworkRequestBody) {
+            data = body.data;
+          } else if (body is JsonNetworkRequestBody) {
+            data = body.data;
+          } else if (body is RawNetworkRequestBody) {
+            data = body.data;
+          } else if (body is TextNetworkRequestBody) {
+            data = body.data;
+          } else {
+            data = requestBody;
+          }
+
           response = await _dio.post(
             url,
-            data: FormData.fromMap(requestBody ?? {}),
+            data: data,
             queryParameters: queryParameters,
           );
-          break;
         case HttpMethod.patch:
           response = await _dio.patch(
             url,
@@ -124,6 +152,10 @@ class ApiBaseHelper {
           break;
       }
 
+      // Restore the original settings
+      _dio.options.baseUrl = originalBaseUrl;
+      _dio.options.headers = originalHeaders;
+
       return response.data;
     } on SocketException {
       throw ServerException(message: "no internet connection");
@@ -138,6 +170,8 @@ class ApiBaseHelper {
             body: body,
             token: token,
             queryParameters: queryParameters,
+            customBaseUrl: customBaseUrl,
+            customHeaders: customHeaders,
           ),
         );
       }

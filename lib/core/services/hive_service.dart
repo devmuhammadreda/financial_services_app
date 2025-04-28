@@ -3,7 +3,7 @@ import 'dart:developer' as developer;
 import 'package:financial_services_app/hive_registrar.g.dart';
 import 'package:hive_ce_flutter/hive_flutter.dart';
 
-import '../../features/home/domain/entities/results_entity.dart';
+import '../../features/products/domain/entities/results_entity.dart';
 import '../error/exceptions.dart';
 
 /// storage, retrieval, and box management operations.

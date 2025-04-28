@@ -1,9 +1,9 @@
 import 'package:hive_ce_flutter/hive_flutter.dart';
 
-import 'features/home/domain/entities/authors_entity.dart';
-import 'features/home/domain/entities/book_entity.dart';
-import 'features/home/domain/entities/formats_entity.dart';
-import 'features/home/domain/entities/results_entity.dart';
+import 'features/products/domain/entities/authors_entity.dart';
+import 'features/products/domain/entities/book_entity.dart';
+import 'features/products/domain/entities/formats_entity.dart';
+import 'features/products/domain/entities/results_entity.dart';
 
 void registerAdapters() {
   Hive.registerAdapter(BooksEntityAdapter());

@@ -98,7 +98,7 @@ abstract class S {
   /// No description provided for @appName.
   ///
   /// In en, this message translates to:
-  /// **'Book Listing App'**
+  /// **'Financial Services App'**
   String get appName;
 
   /// No description provided for @an_error_occurred.
@@ -142,6 +142,60 @@ abstract class S {
   /// In en, this message translates to:
   /// **'See less'**
   String get see_less;
+
+  /// No description provided for @val_username.
+  ///
+  /// In en, this message translates to:
+  /// **'name cannot be empty'**
+  String get val_username;
+
+  /// No description provided for @val_phone_empty.
+  ///
+  /// In en, this message translates to:
+  /// **'phone number cannot be empty'**
+  String get val_phone_empty;
+
+  /// No description provided for @val_phone_invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'phone number is invalid'**
+  String get val_phone_invalid;
+
+  /// No description provided for @val_empty.
+  ///
+  /// In en, this message translates to:
+  /// **'this field cannot be empty'**
+  String get val_empty;
+
+  /// No description provided for @val_email_empty.
+  ///
+  /// In en, this message translates to:
+  /// **'email cannot be empty'**
+  String get val_email_empty;
+
+  /// No description provided for @val_email_invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'email is invalid'**
+  String get val_email_invalid;
+
+  /// No description provided for @contact_us_email_message.
+  ///
+  /// In en, this message translates to:
+  /// **'thank you for contacting us we will get back to you soon to solve your issue'**
+  String get contact_us_email_message;
+
+  /// No description provided for @contact_us_success_message.
+  ///
+  /// In en, this message translates to:
+  /// **'your message has been sent successfully'**
+  String get contact_us_success_message;
+
+  /// No description provided for @contact_us_error_message.
+  ///
+  /// In en, this message translates to:
+  /// **'an error occurred while sending your message'**
+  String get contact_us_error_message;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

@@ -12,8 +12,39 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/contact_us.svg
+  SvgGenImage get contactUs => const SvgGenImage('assets/icons/contact_us.svg');
+
+  /// File path: assets/icons/our_company.svg
+  SvgGenImage get ourCompany =>
+      const SvgGenImage('assets/icons/our_company.svg');
+
+  /// File path: assets/icons/quality-control_7023024.svg
+  SvgGenImage get qualityControl7023024 =>
+      const SvgGenImage('assets/icons/quality-control_7023024.svg');
+
+  /// File path: assets/icons/submit _complaint.svg
+  SvgGenImage get submitComplaint =>
+      const SvgGenImage('assets/icons/submit _complaint.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [
+    contactUs,
+    ourCompany,
+    qualityControl7023024,
+    submitComplaint,
+  ];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/company_logo.svg
+  SvgGenImage get companyLogo =>
+      const SvgGenImage('assets/images/company_logo.svg');
 
   /// File path: assets/images/empty.svg
   SvgGenImage get empty => const SvgGenImage('assets/images/empty.svg');
@@ -23,7 +54,7 @@ class $AssetsImagesGen {
       const SvgGenImage('assets/images/system_update.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [empty, systemUpdate];
+  List<SvgGenImage> get values => [companyLogo, empty, systemUpdate];
 }
 
 class $AssetsTranslationGen {
@@ -42,6 +73,7 @@ class $AssetsTranslationGen {
 class Assets {
   const Assets._();
 
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsTranslationGen translation = $AssetsTranslationGen();
 }

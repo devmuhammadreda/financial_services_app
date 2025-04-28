@@ -1,10 +1,19 @@
 {
-  "appName": "Book Listing App",
+  "appName": "تطبيق الخدمات المالية",
   "an_error_occurred": "حدث خطأ أثناء تحميل التطبيق",
   "retry": "إعادة المحاولة",
   "no_books_found": "لا توجد كتب متاحة",
   "search": "بحث",
   "search_books": "ابحث عن كتب",
   "see_more": "عرض المزيد",
-  "see_less": "عرض أقل"
+  "see_less": "عرض أقل",
+  "val_username":"لا يمكن أن يكون الاسم فارغًا",
+  "val_phone_empty":"لا يمكن أن يكون رقم الهاتف فارغًا",
+  "val_phone_invalid":"رقم الهاتف غير صالح",
+  "val_empty":"لا يمكن أن يكون هذا الحقل فارغًا",
+  "val_email_empty":"لا يمكن أن يكون البريد الإلكتروني فارغًا",
+  "val_email_invalid":"البريد الإلكتروني غير صالح",
+  "contact_us_email_message" : "نشكرك على الاتصال بنا وسنتصل بك قريبًا لحل مشكلتك",
+  "contact_us_success_message" : "تم إرسال رسالتك بنجاح",
+  "contact_us_error_message" : "حدث خطأ أثناء إرسال رسالتك"
 }

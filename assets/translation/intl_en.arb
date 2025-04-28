@@ -1,10 +1,19 @@
 {
-  "appName": "Book Listing App",
+  "appName": "Financial Services App",
   "an_error_occurred": "An error occurred while loading the app",
   "retry": "Retry",
   "no_books_found": "No books available",
   "search": "Search",
   "search_books": "Search for books",
   "see_more": "See more",
-  "see_less": "See less"
+  "see_less": "See less",
+  "val_username": "name cannot be empty",
+  "val_phone_empty": "phone number cannot be empty",
+  "val_phone_invalid": "phone number is invalid",
+  "val_empty": "this field cannot be empty",
+  "val_email_empty": "email cannot be empty",
+  "val_email_invalid": "email is invalid",
+  "contact_us_email_message": "thank you for contacting us we will get back to you soon to solve your issue",
+  "contact_us_success_message": "your message has been sent successfully",
+  "contact_us_error_message": "an error occurred while sending your message"
 }

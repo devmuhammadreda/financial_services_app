@@ -5,15 +5,17 @@ import 'core/localizations_cubit/localizations_cubit.dart';
 import 'core/services/hive_service.dart';
 import 'core/services/network_info.dart';
 import 'core/services/network_service.dart/api_basehelper.dart';
-import 'features/home/home_inject.dart';
-import 'features/home/presentation/cubit/home_cubit.dart';
+import 'features/contact_us/contact_us_inject.dart';
+import 'features/products/products_inject.dart';
+import 'features/products/presentation/cubit/products_cubit.dart';
 
 final GetIt sl = GetIt.instance;
 
 abstract class ServiceLocator {
   static Future<void> init() async {
     sl.allowReassignment = true;
-    initHomeInjection();
+    initProductsInjection();
+    initContactUsInjection();
     _injectLocalizationsCubit();
     _injectDioHelper();
     _injectHiveService();
@@ -39,7 +41,8 @@ List<BlocProvider<Cubit<Object>>> appProviders() =>
       BlocProvider<LocalizationsCubit>(
         create: (_) => sl<LocalizationsCubit>(),
       ),
-      BlocProvider<HomeCubit>(create: (_) => sl<HomeCubit>()..loadBooks()),
+      BlocProvider<ProductsCubit>(
+          create: (_) => sl<ProductsCubit>()..loadBooks()),
     ];
 
 void _injectLocalizationsCubit() {

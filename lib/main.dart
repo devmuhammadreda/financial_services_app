@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'core/services/bloc_observer.dart';
 import 'core/services/get_storage_helper.dart';
 import 'core/services/hive_service.dart';
@@ -12,5 +13,6 @@ void main() async {
   await CacheHelper.init();
   await ServiceLocator.init();
   await sl<HiveService>().init();
+  await dotenv.load(fileName: ".env");
   runApp(MyApp());
 }

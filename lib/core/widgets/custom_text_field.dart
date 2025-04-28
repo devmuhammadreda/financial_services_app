@@ -70,9 +70,9 @@ class CustomTextField extends StatefulWidget {
     this.hintColor = Colors.grey,
     this.fillColor,
     this.textColor,
-    this.borderColor = ColorsManager.borderColor,
+    this.borderColor = ColorsManager.grey,
     this.focusedBorderColor = ColorsManager.primary,
-    this.borderRadius = 64,
+    this.borderRadius = 12,
     this.height = 44,
     this.textSize,
     this.isBold = true,
@@ -188,10 +188,9 @@ class _CustomTextFieldState extends State<CustomTextField> {
             fontWeight: widget.isBold ? FontWeight.bold : FontWeight.normal,
           ),
           scrollPadding: EdgeInsets.only(
-            bottom:
-                widget.keyboardPadding
-                    ? MediaQuery.of(context).size.height * 0.2
-                    : 0,
+            bottom: widget.keyboardPadding
+                ? MediaQuery.of(context).size.height * 0.2
+                : 0,
           ),
           cursorColor: Colors.grey,
           decoration: InputDecoration(
@@ -209,23 +208,21 @@ class _CustomTextFieldState extends State<CustomTextField> {
             prefixIcon: widget.prefixIcon,
             suffixIcon:
                 widget.isPassword ? _buildPasswordToggle() : widget.suffixIcon,
-            suffixIconConstraints:
-                widget.needToSuffixConstraints
-                    ? BoxConstraints(
-                      minHeight: 47.h,
-                      minWidth: widget.isResendSuffixIcon ? 30.w : 1.w,
-                      maxHeight: 48.h,
-                      maxWidth: widget.isResendSuffixIcon ? 30.w : 1.w,
-                    )
-                    : null,
+            suffixIconConstraints: widget.needToSuffixConstraints
+                ? BoxConstraints(
+                    minHeight: 47.h,
+                    minWidth: widget.isResendSuffixIcon ? 30.w : 1.w,
+                    maxHeight: 48.h,
+                    maxWidth: widget.isResendSuffixIcon ? 30.w : 1.w,
+                  )
+                : null,
             contentPadding: EdgeInsets.symmetric(
               horizontal: 12.w,
-              vertical:
-                  widget.height < 49
-                      ? (widget.suffixIcon != null || widget.prefixIcon != null
-                          ? 0
-                          : (widget.height - 30).h)
-                      : (widget.height / 2 - 10).h,
+              vertical: widget.height < 49
+                  ? (widget.suffixIcon != null || widget.prefixIcon != null
+                      ? 0
+                      : (widget.height - 30).h)
+                  : (widget.height / 2 - 10).h,
             ),
             border: _buildBorder(),
             enabledBorder: _buildBorder(),
