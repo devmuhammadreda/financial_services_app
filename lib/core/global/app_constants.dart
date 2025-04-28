@@ -27,3 +27,12 @@ String emailMsg = """
   </div>
 </div>
 """;
+
+String companyOverview =
+    "We are a leading financial services company, dedicated to providing innovative solutions to our clients. Our mission is to empower individuals and businesses to achieve their financial goals through our comprehensive range of products and services.";
+
+String companyMission =
+    "Our mission is to provide our clients with the highest quality financial services and solutions, tailored to their unique needs. We strive to build long-lasting relationships based on trust, integrity, and excellence.";
+
+String companyVision =
+    "Our vision is to be the leading financial services provider in the region, recognized for our commitment to innovation, customer service, and social responsibility. We aim to empower our clients to achieve their financial goals and contribute to the economic growth of our communities.";

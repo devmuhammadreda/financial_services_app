@@ -1,3 +1,4 @@
+import 'package:financial_services_app/features/submit_complaint/complaint_inject.dart' show initComplaintInjection;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
@@ -16,6 +17,7 @@ abstract class ServiceLocator {
     sl.allowReassignment = true;
     initProductsInjection();
     initContactUsInjection();
+    initComplaintInjection();
     _injectLocalizationsCubit();
     _injectDioHelper();
     _injectHiveService();

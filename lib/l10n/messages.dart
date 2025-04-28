@@ -196,6 +196,180 @@ abstract class S {
   /// In en, this message translates to:
   /// **'an error occurred while sending your message'**
   String get contact_us_error_message;
+
+  /// No description provided for @more.
+  ///
+  /// In en, this message translates to:
+  /// **'more'**
+  String get more;
+
+  /// No description provided for @contact_us.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Us'**
+  String get contact_us;
+
+  /// No description provided for @your_message.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Message'**
+  String get your_message;
+
+  /// No description provided for @your_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Name'**
+  String get your_name;
+
+  /// No description provided for @your_email.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Email'**
+  String get your_email;
+
+  /// No description provided for @your_phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Phone'**
+  String get your_phone;
+
+  /// No description provided for @your_message_placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'write your message here'**
+  String get your_message_placeholder;
+
+  /// No description provided for @products.
+  ///
+  /// In en, this message translates to:
+  /// **'Products'**
+  String get products;
+
+  /// No description provided for @submit_complaint.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Complaint'**
+  String get submit_complaint;
+
+  /// No description provided for @about_us.
+  ///
+  /// In en, this message translates to:
+  /// **'About Us'**
+  String get about_us;
+
+  /// No description provided for @complaint_type.
+  ///
+  /// In en, this message translates to:
+  /// **'Complaint Type'**
+  String get complaint_type;
+
+  /// No description provided for @complaint_type_placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Select complaint type'**
+  String get complaint_type_placeholder;
+
+  /// No description provided for @complaint_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Complaint Description'**
+  String get complaint_description;
+
+  /// No description provided for @complaint_description_placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'write complaint description here'**
+  String get complaint_description_placeholder;
+
+  /// No description provided for @complaint_success_message.
+  ///
+  /// In en, this message translates to:
+  /// **'Your complaint has been submitted successfully'**
+  String get complaint_success_message;
+
+  /// No description provided for @complaint_error_message.
+  ///
+  /// In en, this message translates to:
+  /// **'an error occurred while submitting your complaint'**
+  String get complaint_error_message;
+
+  /// No description provided for @sroducts.
+  ///
+  /// In en, this message translates to:
+  /// **'Products'**
+  String get sroducts;
+
+  /// No description provided for @services.
+  ///
+  /// In en, this message translates to:
+  /// **'Services'**
+  String get services;
+
+  /// No description provided for @wait_time.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait Time'**
+  String get wait_time;
+
+  /// No description provided for @delivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivery'**
+  String get delivery;
+
+  /// No description provided for @personnel.
+  ///
+  /// In en, this message translates to:
+  /// **'Personnel'**
+  String get personnel;
+
+  /// No description provided for @submit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get submit;
+
+  /// No description provided for @company_overview.
+  ///
+  /// In en, this message translates to:
+  /// **'Company Overview'**
+  String get company_overview;
+
+  /// No description provided for @company_overview_description.
+  ///
+  /// In en, this message translates to:
+  /// **'We are a leading company in providing financial and banking services. We are committed to providing the best financial solutions to our customers.'**
+  String get company_overview_description;
+
+  /// No description provided for @company_overview_mission.
+  ///
+  /// In en, this message translates to:
+  /// **'Mission'**
+  String get company_overview_mission;
+
+  /// No description provided for @company_overview_vision.
+  ///
+  /// In en, this message translates to:
+  /// **'Vision'**
+  String get company_overview_vision;
+
+  /// No description provided for @company_mission_description.
+  ///
+  /// In en, this message translates to:
+  /// **'To provide innovative and reliable financial services that meet our customers\' needs.'**
+  String get company_mission_description;
+
+  /// No description provided for @company_vision_description.
+  ///
+  /// In en, this message translates to:
+  /// **'To be the first choice for customers in providing financial solutions.'**
+  String get company_vision_description;
+
+  /// No description provided for @send.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get send;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

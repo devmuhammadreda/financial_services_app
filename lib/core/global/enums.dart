@@ -12,4 +12,5 @@ enum PaymentMethods { cash, online }
 
 enum ShippingMethod { homeDelivery, pickInStore }
 
+enum ComplaintType { product, service, waitTime, delivery, personnel }
 

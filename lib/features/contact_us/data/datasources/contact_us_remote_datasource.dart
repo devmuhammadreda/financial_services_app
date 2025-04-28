@@ -1,4 +1,5 @@
 import 'package:financial_services_app/core/services/network_service.dart/network_request_body.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import '../../../../core/global/api_keys.dart';
 import '../../../../core/services/network_service.dart/api_basehelper.dart';
@@ -15,11 +16,10 @@ class ContactUsRemoteDataSource implements ContactUsRemoteBaseDataSource {
   ContactUsRemoteDataSource(this.apiBaseHelper);
   @override
   Future<BrevoEmailEntity> sendContactUsForm(SendEmailParams params) async {
-    String apiKey =
-        "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";
+    String? apiKey = dotenv.env['API_KEY'];
     final Map<String, String> headers = {
       'accept': 'application/json',
-      'api-key': apiKey,
+      if (apiKey != null) 'api-key': apiKey,
       'content-type': 'application/json',
     };
 

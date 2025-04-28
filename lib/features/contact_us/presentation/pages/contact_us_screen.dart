@@ -46,74 +46,69 @@ class ContactUsScreen extends StatelessWidget {
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              'Contact Us',
+              context.translate.contact_us,
               style: TextStyles.semiBold14.copyWith(color: Colors.black),
             ),
           ),
           body: Form(
             key: cubit.contactUsFormKey,
-            child: Column(
-              children: [
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        contactInfo(
-                          value: ContactInfo.phone.nicelyFormattedEgyptianPhone,
-                          icon: Icons.phone,
-                        ),
-                        contactInfo(
-                          value: ContactInfo.email,
-                          icon: Icons.email,
-                        ),
-                        AppSpacer(),
-                        CustomTextField(
-                          hint: 'Your Name',
-                          type: TextInputType.name,
-                          autoFillHints: const [AutofillHints.name],
-                          validate: Validator.validateName,
-                          controller: cubit.nameController,
-                        ),
-                        AppSpacer(),
-                        CustomTextField(
-                          hint: 'Your email address',
-                          type: TextInputType.emailAddress,
-                          autoFillHints: const [AutofillHints.email],
-                          validate: Validator.validateEmail,
-                          controller: cubit.emailController,
-                        ),
-                        AppSpacer(),
-                        CustomTextField(
-                          hint: 'Your phone',
-                          type: TextInputType.phone,
-                          autoFillHints: const [AutofillHints.telephoneNumber],
-                          validate: Validator.validatePhone,
-                          formattedType: [
-                            FilteringTextInputFormatter.digitsOnly,
-                            LengthLimitingTextInputFormatter(11),
-                          ],
-                          controller: cubit.phoneController,
-                        ),
-                        AppSpacer(),
-                        CustomTextField(
-                          hint: 'Your Message',
-                          type: TextInputType.multiline,
-                          maxLines: 5,
-                          validate: Validator.validateEmptyField,
-                          controller: cubit.messageController,
-                        ),
-                      ],
-                    ),
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  contactInfo(
+                    value: ContactInfo.phone.nicelyFormattedEgyptianPhone,
+                    icon: Icons.phone,
                   ),
-                ),
-                AppProgressButton(
-                  onPressed: (anim) {
-                    cubit.sendEmail();
-                  },
-                  text: 'Send',
-                ),
-              ],
+                  contactInfo(
+                    value: ContactInfo.email,
+                    icon: Icons.email,
+                  ),
+                  AppSpacer(),
+                  CustomTextField(
+                    hint: context.translate.your_name,
+                    type: TextInputType.name,
+                    autoFillHints: const [AutofillHints.name],
+                    validate: Validator.validateName,
+                    controller: cubit.nameController,
+                  ),
+                  AppSpacer(),
+                  CustomTextField(
+                    hint: context.translate.your_email,
+                    type: TextInputType.emailAddress,
+                    autoFillHints: const [AutofillHints.email],
+                    validate: Validator.validateEmail,
+                    controller: cubit.emailController,
+                  ),
+                  AppSpacer(),
+                  CustomTextField(
+                    hint: context.translate.your_phone,
+                    type: TextInputType.phone,
+                    autoFillHints: const [AutofillHints.telephoneNumber],
+                    validate: Validator.validatePhone,
+                    formattedType: [
+                      FilteringTextInputFormatter.digitsOnly,
+                      LengthLimitingTextInputFormatter(11),
+                    ],
+                    controller: cubit.phoneController,
+                  ),
+                  AppSpacer(),
+                  CustomTextField(
+                    hint: context.translate.your_message,
+                    type: TextInputType.multiline,
+                    maxLines: 5,
+                    validate: Validator.validateEmptyField,
+                    controller: cubit.messageController,
+                  ),
+                  AppSpacer(heightRatio: 3),
+                  AppProgressButton(
+                    onPressed: (anim) {
+                      cubit.sendEmail();
+                    },
+                    text: context.translate.send,
+                  ),
+                ],
+              ),
             ).paddingAll(20.sp),
           ),
         );

@@ -1,3 +1,6 @@
+import 'package:financial_services_app/core/extensions/build_context.dart';
+import 'package:financial_services_app/core/utils/router.dart';
+
 import 'enums.dart';
 
 String getShippingMethodText(ShippingMethod shippingMethod) {
@@ -27,4 +30,19 @@ String obscureCardNumber(String cardNumber) {
 
   // Combine obscured part with last 4 digits
   return '$obscuredPart$lastFour';
+}
+
+String getComplaintTypeString(ComplaintType type) {
+  switch (type) {
+    case ComplaintType.product:
+      return MagicRouter.currentContext!.translate.products;
+    case ComplaintType.service:
+      return MagicRouter.currentContext!.translate.services;
+    case ComplaintType.waitTime:
+      return MagicRouter.currentContext!.translate.wait_time;
+    case ComplaintType.delivery:
+      return MagicRouter.currentContext!.translate.delivery;
+    case ComplaintType.personnel:
+      return MagicRouter.currentContext!.translate.personnel;
+  }
 }

@@ -4,6 +4,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'core/services/bloc_observer.dart';
 import 'core/services/get_storage_helper.dart';
 import 'core/services/hive_service.dart';
+import 'core/services/restart_app.dart';
 import 'injection_container.dart';
 import 'my_app.dart';
 
@@ -14,5 +15,5 @@ void main() async {
   await ServiceLocator.init();
   await sl<HiveService>().init();
   await dotenv.load(fileName: ".env");
-  runApp(MyApp());
+  runApp(RestartWidget(child: MyApp()));
 }
