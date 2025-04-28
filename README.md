@@ -120,8 +120,3 @@ Since no real API is provided, dummy local JSON or mocked API integration is use
 
 - GitHub repo: https://github.com/devmuhammadreda/financial_services_app.git
 - Email:  devmuhammadreda@gmail.com
-
----
-
-Would you like me to also prepare a **version with fake demo links inserted** so it's fully ready before you send me the real ones? 🚀  
-(That way you can just replace them easily!)
