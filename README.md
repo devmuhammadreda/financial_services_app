@@ -66,12 +66,12 @@ Since no real API is provided, dummy local JSON or mocked API integration is use
 ---
 
 ## 📹 Demo (Video)
-🎥 [Watch Demo](#) <!-- Replace # with your new link -->
+🎥 [Watch Demo] https://drive.google.com/file/d/13g5yViCMVhzITqSzEHLKJs4E2W2aqgFB/view?usp=drive_link
 
 ---
 
 ## 📦 Demo (APK)
-📱 [Download APK](#) <!-- Replace # with your new link -->
+📱 [Download APK] https://drive.google.com/file/d/1b9AulkADuwITad2-JsKD9vSj7fm9HLnH/view?usp=drive_link
 
 ---
 
@@ -79,8 +79,8 @@ Since no real API is provided, dummy local JSON or mocked API integration is use
 
 1. Clone this repo:
    ```bash
-   git clone <your-repo-link>
-   cd your_project_directory
+   git clone https://github.com/devmuhammadreda/financial_services_app.git
+   cd financial_services_app
    ```
 
 2. Install dependencies:
@@ -118,14 +118,8 @@ Since no real API is provided, dummy local JSON or mocked API integration is use
 
 ## 📧 Submission
 
-- GitHub repo: `<your-github-link>` <!-- Replace with your GitHub link -->
-- Email: `<your-email>` <!-- Replace with your email -->
-
----
-
-# 🎯 Screenshots
-
-(Add screenshots of Main Screen, Contact Us, Products, Submit Complaint, and About Us Screens here)
+- GitHub repo: https://github.com/devmuhammadreda/financial_services_app.git
+- Email:  devmuhammadreda@gmail.com
 
 ---
 
