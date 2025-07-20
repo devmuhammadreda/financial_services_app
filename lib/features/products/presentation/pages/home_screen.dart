@@ -92,7 +92,10 @@ class _ProductsScreenState extends State<ProductsScreen> {
             ),
           ).paddingAll(20.sp),
           Expanded(
-            child: BlocBuilder<ProductsCubit, ProductsState>(
+            child: BlocConsumer<ProductsCubit, ProductsState>(
+              listener: (context, state) {
+                
+              },
               builder: (context, state) {
                 if (state is ProductsInitial || state is BooksLoading) {
                   return const LoadingWidget(withMaterial: true);

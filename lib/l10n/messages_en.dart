@@ -51,13 +51,16 @@ class SEn extends S {
   String get val_email_invalid => 'email is invalid';
 
   @override
-  String get contact_us_email_message => 'thank you for contacting us we will get back to you soon to solve your issue';
+  String get contact_us_email_message =>
+      'thank you for contacting us we will get back to you soon to solve your issue';
 
   @override
-  String get contact_us_success_message => 'your message has been sent successfully';
+  String get contact_us_success_message =>
+      'your message has been sent successfully';
 
   @override
-  String get contact_us_error_message => 'an error occurred while sending your message';
+  String get contact_us_error_message =>
+      'an error occurred while sending your message';
 
   @override
   String get more => 'more';
@@ -99,13 +102,16 @@ class SEn extends S {
   String get complaint_description => 'Complaint Description';
 
   @override
-  String get complaint_description_placeholder => 'write complaint description here';
+  String get complaint_description_placeholder =>
+      'write complaint description here';
 
   @override
-  String get complaint_success_message => 'Your complaint has been submitted successfully';
+  String get complaint_success_message =>
+      'Your complaint has been submitted successfully';
 
   @override
-  String get complaint_error_message => 'an error occurred while submitting your complaint';
+  String get complaint_error_message =>
+      'an error occurred while submitting your complaint';
 
   @override
   String get sroducts => 'Products';
@@ -129,7 +135,8 @@ class SEn extends S {
   String get company_overview => 'Company Overview';
 
   @override
-  String get company_overview_description => 'We are a leading company in providing financial and banking services. We are committed to providing the best financial solutions to our customers.';
+  String get company_overview_description =>
+      'We are a leading company in providing financial and banking services. We are committed to providing the best financial solutions to our customers.';
 
   @override
   String get company_overview_mission => 'Mission';
@@ -138,10 +145,12 @@ class SEn extends S {
   String get company_overview_vision => 'Vision';
 
   @override
-  String get company_mission_description => 'To provide innovative and reliable financial services that meet our customers\' needs.';
+  String get company_mission_description =>
+      'To provide innovative and reliable financial services that meet our customers\' needs.';
 
   @override
-  String get company_vision_description => 'To be the first choice for customers in providing financial solutions.';
+  String get company_vision_description =>
+      'To be the first choice for customers in providing financial solutions.';
 
   @override
   String get send => 'Send';

@@ -23,7 +23,7 @@ class ThemeManager {
     primaryColorLight: ColorsManager.primary,
     disabledColor: ColorsManager.lightGrey,
     fontFamily: fontName,
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: ColorsManager.white,
       shadowColor: ColorsManager.grey,
       elevation: 4,
@@ -39,7 +39,7 @@ class ThemeManager {
     appBarTheme: AppBarTheme(
       elevation: 0,
       scrolledUnderElevation: 0,
-      iconTheme: const IconThemeData(color: ColorsManager.grey ),
+      iconTheme: const IconThemeData(color: ColorsManager.grey),
       backgroundColor: ColorsManager.scaffoldBackground,
       shadowColor: ColorsManager.black,
       centerTitle: false,
@@ -85,7 +85,7 @@ class ThemeManager {
       bodyLarge: TextStyles.regular14.copyWith(color: ColorsManager.black),
     ),
     badgeTheme: const BadgeThemeData(backgroundColor: ColorsManager.red),
-    tabBarTheme: const TabBarTheme(
+    tabBarTheme: const TabBarThemeData(
       indicatorColor: ColorsManager.primary,
       labelColor: ColorsManager.primary,
       unselectedLabelColor: ColorsManager.lightGrey,

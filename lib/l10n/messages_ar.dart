@@ -51,7 +51,8 @@ class SAr extends S {
   String get val_email_invalid => 'البريد الإلكتروني غير صالح';
 
   @override
-  String get contact_us_email_message => 'نشكرك على الاتصال بنا وسنتصل بك قريبًا لحل مشكلتك';
+  String get contact_us_email_message =>
+      'نشكرك على الاتصال بنا وسنتصل بك قريبًا لحل مشكلتك';
 
   @override
   String get contact_us_success_message => 'تم إرسال رسالتك بنجاح';
@@ -129,7 +130,8 @@ class SAr extends S {
   String get company_overview => 'نظرة عامة عن الشركة';
 
   @override
-  String get company_overview_description => 'نحن شركة رائدة في تقديم الخدمات المالية والمصرفية. نحن ملتزمون بتقديم أفضل الحلول المالية لعملائنا.';
+  String get company_overview_description =>
+      'نحن شركة رائدة في تقديم الخدمات المالية والمصرفية. نحن ملتزمون بتقديم أفضل الحلول المالية لعملائنا.';
 
   @override
   String get company_overview_mission => 'مهمتنا';
@@ -138,10 +140,12 @@ class SAr extends S {
   String get company_overview_vision => 'رؤيتنا';
 
   @override
-  String get company_mission_description => 'تقديم خدمات مالية مبتكرة وموثوقة تلبي احتياجات عملائنا.';
+  String get company_mission_description =>
+      'تقديم خدمات مالية مبتكرة وموثوقة تلبي احتياجات عملائنا.';
 
   @override
-  String get company_vision_description => 'أن نكون الخيار الأول للعملاء في تقديم الحلول المالية.';
+  String get company_vision_description =>
+      'أن نكون الخيار الأول للعملاء في تقديم الحلول المالية.';
 
   @override
   String get send => 'إرسال';
